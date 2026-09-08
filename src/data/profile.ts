@@ -263,6 +263,7 @@ export const experience = [
 
 export const projects = [
   {
+    image: "realestate",
     industry: "Real Estate & Property",
     name: "RAFAL & Alnayfah — Property Marketing",
     role: "Digital marketing & social media lead",
@@ -275,6 +276,7 @@ export const projects = [
     tags: ["Meta Ads", "Google Ads", "Landing Pages", "CRM"],
   },
   {
+    image: "mattress",
     industry: "Manufacturing & Retail",
     name: "The Mattress Factory — Brand & Campaign Programme",
     role: "Brand and campaign designer / strategist",
@@ -287,6 +289,7 @@ export const projects = [
     tags: ["Brand Identity", "Social Media", "Graphic Design", "E-Commerce"],
   },
   {
+    image: "fnb",
     industry: "Restaurants & F&B",
     name: "Restaurant & F&B Brand Programme",
     role: "Marketing and creative lead",
@@ -299,6 +302,7 @@ export const projects = [
     tags: ["Menu Design", "Photography Direction", "Social Campaigns"],
   },
   {
+    image: "aceco",
     industry: "Engineering & Consultancy",
     name: "ACECO — Digital Presence & Lead Generation",
     role: "Senior digital marketing & business development consultant",
@@ -310,6 +314,133 @@ export const projects = [
     tags: ["Google Ads", "SEO/SEM", "Website Development", "Content Design"],
   },
 ];
+
+export const moreProjects = [
+  {
+    image: "berain",
+    industry: "FMCG & Beverages",
+    name: "Berain Water — App Acquisition Campaign",
+    role: "Campaign design & social media marketing",
+    challenge:
+      "A bottled-water brand needed to attract new customers to its ordering app.",
+    approach:
+      "Produced a bilingual new-customer offer campaign around app download and a discount code, adapted across multiple social placements.",
+    impact:
+      "A consistent promotional campaign set driving app downloads and first orders.",
+    tags: ["Social Media", "Promo Campaign", "Arabic Creative"],
+  },
+  {
+    image: "daffah",
+    industry: "Fashion & Apparel",
+    name: "DAFFAH — Apparel Brand Content",
+    role: "Creative direction & social content design",
+    challenge:
+      "A traditional clothing brand needed premium content that communicated craftsmanship and quality.",
+    approach:
+      "Built a collection-led content style with product-focused visuals and Arabic messaging around quality and fine detail.",
+    impact: "A refined, consistent brand look across seasonal collection posts.",
+    tags: ["Brand Content", "Fashion Creative", "Social Media"],
+  },
+  {
+    image: "modasafi",
+    industry: "E-Commerce & Fashion",
+    name: "Moda Safi — Online Abaya Store Marketing",
+    role: "E-commerce marketing & creative",
+    challenge:
+      "An online abaya store needed product-led creative that pushed traffic to modasafi.com.",
+    approach:
+      "Designed classic and trend-led product campaigns linked to the online store with clear web-address branding.",
+    impact: "A shoppable content set connecting social audiences to the store.",
+    tags: ["E-Commerce", "Product Creative", "Social Media"],
+  },
+  {
+    image: "carwash",
+    industry: "Automotive Services",
+    name: "Car Wash Business — Service Marketing",
+    role: "Marketing strategy & creative",
+    challenge:
+      "A local car-wash business needed a clear service message and offer-driven social presence.",
+    approach:
+      "Created service and offer creative with strong visual identity and engagement-focused social formats.",
+    impact: "Ready-to-run local campaign set for service promotion.",
+    tags: ["Local Marketing", "Offer Campaigns", "Graphic Design"],
+  },
+  {
+    image: "dates",
+    industry: "Food Products & Retail",
+    name: "Dates Brands — Product Advertising",
+    role: "Advertising design",
+    challenge:
+      "Dates producers needed product advertising that stood out across varieties and seasonal demand.",
+    approach:
+      "Designed a family of product ads (Suqai, Amber, Sukkri and Fardh varieties) with a shared premium visual language.",
+    impact: "A cohesive product advertising suite across multiple date lines.",
+    tags: ["Product Ads", "Packaging Visuals", "Seasonal Campaigns"],
+  },
+  {
+    image: "menu",
+    industry: "Restaurants & F&B",
+    name: "Menu Design & Pricing Layout",
+    role: "Menu and print design",
+    challenge:
+      "Restaurant clients needed clear, appetising menus with accurate item and price structure.",
+    approach:
+      "Produced structured menu layouts with special-order sections, category grouping and clean pricing presentation.",
+    impact: "Print-ready menus aligned with each restaurant's brand identity.",
+    tags: ["Menu Design", "Print Layout", "Branding"],
+  },
+  {
+    image: "itqan",
+    industry: "Food Service & Catering",
+    name: "Al-Itqan Operations — Service Brand Content",
+    role: "Marketing & content design",
+    challenge:
+      "A food-service operator needed brand content that communicated quality and service reliability.",
+    approach:
+      "Built a quality-led content theme with service photography direction and contact-driven creative.",
+    impact: "Clear, consistent service branding across digital channels.",
+    tags: ["Brand Content", "Photography Direction", "Social Media"],
+  },
+  {
+    image: "gfsa",
+    industry: "Government & Public Sector",
+    name: "General Food Security Authority (GFSA) — Campaign Content",
+    role: "Digital content & campaign design",
+    challenge:
+      "Public-sector communication required clear, credible campaign material for Riyadh audiences.",
+    approach:
+      "Delivered campaign creative and call-to-action content aligned to institutional tone and standards.",
+    impact: "Professional campaign assets suited to a public-sector audience.",
+    tags: ["Public Sector", "Campaign Design", "Content Marketing"],
+  },
+  {
+    image: "interior",
+    industry: "Interior Design & Fit-Out",
+    name: "ACECO Interior Design — Story Campaigns",
+    role: "Creative direction & social advertising",
+    challenge:
+      "Interior design services needed visual proof of work and a mobile-first way to reach clients.",
+    approach:
+      "Produced interior design sample visuals and Snapchat/Instagram story campaign sets with direct contact prompts.",
+    impact: "Story-led campaigns turning design work into enquiry-generating content.",
+    tags: ["Story Ads", "Snapchat", "Interior Visuals"],
+  },
+  {
+    image: "video",
+    industry: "Media Production",
+    name: "Video Production Projects",
+    role: "Production coordination & creative direction",
+    challenge:
+      "Clients needed motion content to support brand and product campaigns.",
+    approach:
+      "Coordinated video production projects from concept through delivery for social and advertising use.",
+    impact: "Video assets extending campaign reach beyond static creative.",
+    tags: ["Video Production", "Creative Direction", "Social Media"],
+  },
+];
+
+export const allProjects = [...projects, ...moreProjects];
+
 
 export const skillsInAction = [
   {
