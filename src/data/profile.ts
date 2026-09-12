@@ -1,6 +1,6 @@
 export const profile = {
   name: "Osama Siddiqui",
-  title: "Digital Marketing • Business Development • IT & Digital Systems",
+  title: "Business Growth Consultant",
   location: "Riyadh, Saudi Arabia",
   email: "osama.gr84u@gmail.com",
   phone: "+966 58 109 0307",
@@ -14,10 +14,10 @@ export const profile = {
 };
 
 export const metrics = [
-  { value: "10+", label: "Years Experience" },
-  { value: "30+", label: "Clients Supported" },
+  { value: "81+", label: "Businesses Supported" },
+  { value: "17", label: "Industries" },
   { value: "100+", label: "Campaigns Executed" },
-  { value: "20+", label: "Industries Served" },
+  { value: "50K+", label: "Leads Generated" },
 ];
 
 export const skillGroups = [
@@ -490,7 +490,7 @@ export const toolGroups = [
   },
   {
     title: "AI Tools",
-    items: ["ChatGPT", "Claude", "Gemini"],
+    items: ["ChatGPT", "Claude", "Gemini", "n8n", "Lovable"],
   },
   {
     title: "Business & Education Systems",
