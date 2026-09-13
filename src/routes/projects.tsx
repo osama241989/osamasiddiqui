@@ -34,7 +34,7 @@ function ProjectsPage() {
         <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-2">
           {allProjects.map((project) => (
             <article key={project.name} className="border-b border-slate-200 pb-12">
-              <img src={projectImages[project.image]} alt={`${project.name} project work`} loading="lazy" className="mb-6 aspect-video w-full rounded-xl object-cover outline-1 -outline-offset-1 outline-black/5" />
+              <img src={projectImages[project.image]} alt={`${project.name} project work`} className="mb-6 aspect-video w-full rounded-xl object-cover outline-1 -outline-offset-1 outline-black/5" />
               <p className="text-xs font-bold uppercase tracking-widest text-brand-accent">{project.industry}</p>
               <h2 className="mt-2 text-2xl font-bold">{project.name}</h2>
               <p className="mt-2 text-sm font-medium text-brand-muted">{project.role}</p>
