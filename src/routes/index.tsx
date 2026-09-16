@@ -1,11 +1,15 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowDown, ArrowRight, Bot, BriefcaseBusiness, Building2, ChartNoAxesCombined, Download, ExternalLink, Linkedin, Mail, MapPin, Megaphone, Network, Phone, Target } from "lucide-react";
-import portrait from "@/assets/portrait.jpg.asset.json";
+import { ArrowDown, ArrowRight, BarChart3, Bot, BriefcaseBusiness, Building2, ChartNoAxesCombined, Download, ExternalLink, Eye, Linkedin, Mail, MapPin, Megaphone, Network, Phone, Target, TrendingUp } from "lucide-react";
+import portrait from "@/assets/portrait-formal.png.asset.json";
 import cvAsset from "@/assets/business-growth-cv.pdf.asset.json";
 import portfolioAsset from "@/assets/cwb-portfolio-2026.pdf.asset.json";
+import caseStudiesReport from "@/assets/cwb-case-studies-report.pdf.asset.json";
+import clientPortfolio from "@/assets/business-growth-client-portfolio.pdf.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
+import { Button } from "@/components/ui/button";
 import { awards, certifications, experience, profile } from "@/data/profile";
 import { projectImages } from "@/data/projectImages";
+import { clientLogos } from "@/data/clientLogos";
 import { aiCapabilities, aiTools, approach, businessResults, growthCases, growthMetrics, growthServices, industryNames, realEstateExperience } from "@/data/growth";
 
 const TITLE = "Business Growth Consultant | Osama Siddiqui";
@@ -21,6 +25,41 @@ export const Route = createFileRoute("/")({
 });
 
 const serviceIcons = [BriefcaseBusiness, Target, Megaphone, ChartNoAxesCombined, Bot, Network];
+const campaignDashboards = [
+  {
+    company: "The Mattress Factory",
+    summary: "E-commerce growth engine built from zero",
+    icon: TrendingUp,
+    metrics: [
+      { value: "SAR 529K", label: "Conversion value" },
+      { value: "18.3x", label: "Return on ad spend" },
+      { value: "17,700", label: "Google Ads clicks" },
+      { value: "2.66M", label: "Meta impressions" },
+    ],
+  },
+  {
+    company: "ACECO Engineering",
+    summary: "B2B demand and local discovery system",
+    icon: BarChart3,
+    metrics: [
+      { value: "1.1M", label: "Google impressions" },
+      { value: "19,300", label: "Google Ads clicks" },
+      { value: "2,557", label: "Phone calls" },
+      { value: "22,259", label: "Business actions" },
+    ],
+  },
+  {
+    company: "Lavender SPA & Saloon",
+    summary: "First-month customer acquisition launch",
+    icon: Target,
+    metrics: [
+      { value: "451", label: "Messaging leads" },
+      { value: "SAR 2.65", label: "Cost per lead" },
+      { value: "2,162", label: "Landing-page views" },
+      { value: "17,490", label: "Instagram views" },
+    ],
+  },
+];
 
 function SectionHeading({ title, note, inverse = false }: { title: string; note?: string; inverse?: boolean }) {
   return <div className="mb-12 flex flex-col gap-4 md:mb-16 md:flex-row md:items-end md:justify-between"><div><h2 className={`mb-4 text-3xl font-bold tracking-tight md:text-4xl ${inverse ? "text-primary-foreground" : ""}`}>{title}</h2><div className="h-1 w-20 bg-brand-accent" /></div>{note ? <p className={`max-w-lg leading-relaxed md:text-right ${inverse ? "text-slate-300" : "text-brand-muted"}`}>{note}</p> : null}</div>;
@@ -49,15 +88,20 @@ function Index() {
               <a href={portfolioAsset.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm font-bold text-brand-accent hover:text-brand-primary"><ExternalLink className="h-4 w-4" /> View CWB Portfolio</a>
             </div>
           </div>
-          <div className="w-full shrink-0 md:w-[34%]"><img src={portrait.url} alt="Osama Siddiqui, Business Growth Consultant" width={1080} height={1440} className="aspect-3/4 w-full rounded-2xl object-cover object-top outline-1 -outline-offset-1 outline-black/5" /></div>
+          <div className="w-full shrink-0 md:w-[34%]"><img src={portrait.url} alt="Osama Siddiqui, Business Growth Consultant" width={768} height={1024} className="aspect-3/4 w-full rounded-2xl object-cover object-top outline-1 -outline-offset-1 outline-black/5" /></div>
+        </div>
+        <div className="mx-auto mt-12 grid max-w-7xl gap-4 border-t border-slate-100 pt-8 md:grid-cols-2">
+          {[{ title: "Business Growth Client Portfolio", detail: "81 clients, 17 industries and delivered services", asset: clientPortfolio, filename: "Osama-Siddiqui-Business-Growth-Client-Portfolio.pdf" }, { title: "CWB Case Studies Report", detail: "Detailed campaigns, results and business outcomes", asset: caseStudiesReport, filename: "Osama-Siddiqui-CWB-Case-Studies-Report.pdf" }].map((document) => <article key={document.title} className="flex flex-col justify-between gap-5 rounded-lg border border-slate-200 bg-surface-light p-5 sm:flex-row sm:items-center"><div><p className="font-bold">{document.title}</p><p className="mt-1 text-sm text-brand-muted">{document.detail}</p></div><div className="flex shrink-0 gap-2"><Button asChild variant="outline" size="sm"><a href={document.asset.url} target="_blank" rel="noreferrer"><Eye /> Review</a></Button><Button asChild size="sm"><a href={document.asset.url} download={document.filename}><Download /> Download</a></Button></div></article>)}
         </div>
       </section>
 
       <section aria-label="Professional results" className="bg-brand-primary px-6 py-12"><div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 text-center md:grid-cols-3 lg:grid-cols-6">{growthMetrics.map((metric) => <div key={metric.label}><div className="text-3xl font-bold text-primary-foreground">{metric.value}</div><div className="mt-2 text-sm leading-snug text-slate-400">{metric.label}</div></div>)}</div></section>
 
+      <section aria-labelledby="client-logo-heading" className="overflow-hidden border-b border-slate-100 bg-white py-12"><div className="mx-auto mb-8 max-w-7xl px-6"><p id="client-logo-heading" className="text-center text-xs font-bold uppercase tracking-widest text-brand-muted">Selected organizations and brands supported</p></div><div className="group flex overflow-hidden"><div className="flex w-max shrink-0 animate-logo-track items-center group-hover:[animation-play-state:paused]">{[...clientLogos, ...clientLogos].map((logo, index) => <div key={`${logo.name}-${index}`} className="mx-3 flex h-24 w-44 shrink-0 items-center justify-center rounded-lg border border-slate-100 bg-white p-4"><img src={logo.src} alt={index < clientLogos.length ? `${logo.name} logo` : ""} aria-hidden={index >= clientLogos.length} loading="lazy" className="max-h-16 max-w-36 object-contain" /></div>)}</div></div></section>
+
       <section id="expertise" className="px-6 py-24"><div className="mx-auto max-w-7xl"><SectionHeading title="How I Help Businesses Grow" note="Marketing is one of my tools. Business growth is the problem I solve." /><div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">{growthServices.map((service, index) => { const Icon = serviceIcons[index] ?? BriefcaseBusiness; return <article key={service.title} className="rounded-xl border border-slate-100 p-8 shadow-sm"><div className="mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-brand-accent/10 text-brand-accent"><Icon className="h-6 w-6" /></div><h3 className="text-xl font-bold">{service.title}</h3><p className="mt-3 leading-relaxed text-brand-muted">{service.body}</p></article>; })}</div></div></section>
 
-      <section className="bg-surface-light px-6 py-24"><div className="mx-auto max-w-7xl"><SectionHeading title="Selected Business Growth Results" /><div className="grid gap-px overflow-hidden rounded-xl bg-slate-200 sm:grid-cols-2 lg:grid-cols-4">{businessResults.map((result) => <div key={result.label} className="bg-white p-7"><div className="text-3xl font-bold text-brand-accent">{result.value}</div><div className="mt-2 font-medium text-brand-muted">{result.label}</div></div>)}</div><p className="mt-6 text-sm text-brand-muted">Selected results from client projects and campaigns. Results vary by business, market, campaign period and objectives.</p></div></section>
+      <section className="bg-surface-light px-6 py-24"><div className="mx-auto max-w-7xl"><SectionHeading title="Business Growth Dashboard" note="Verified outcomes grouped by business, so every result stays connected to its campaign context." /><div className="grid gap-6 lg:grid-cols-3">{campaignDashboards.map((dashboard) => { const Icon = dashboard.icon; return <article key={dashboard.company} className="overflow-hidden rounded-lg border border-slate-200 bg-white"><div className="flex items-start gap-4 border-b border-slate-100 p-6"><div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-brand-accent/10 text-brand-accent"><Icon className="h-5 w-5" /></div><div><h3 className="font-bold">{dashboard.company}</h3><p className="mt-1 text-sm text-brand-muted">{dashboard.summary}</p></div></div><div className="grid grid-cols-2">{dashboard.metrics.map((metric, index) => <div key={metric.label} className={`min-h-32 p-5 ${index % 2 === 0 ? "border-r border-slate-100" : ""} ${index < 2 ? "border-b border-slate-100" : ""}`}><div className="text-2xl font-bold text-brand-accent">{metric.value}</div><div className="mt-2 text-sm leading-snug text-brand-muted">{metric.label}</div></div>)}</div></article>; })}</div><div className="mt-8 grid gap-px overflow-hidden rounded-lg bg-slate-200 sm:grid-cols-2 lg:grid-cols-4">{businessResults.slice(3, 7).map((result) => <div key={result.label} className="bg-brand-primary p-6"><div className="text-2xl font-bold text-primary-foreground">{result.value}</div><div className="mt-2 text-sm text-slate-300">{result.label}</div></div>)}</div><p className="mt-6 text-sm text-brand-muted">Selected results from client projects and campaigns. Results vary by business, market, campaign period and objectives.</p></div></section>
 
       <section id="growth-cases" className="px-6 py-24"><div className="mx-auto max-w-7xl"><SectionHeading title="Selected Growth Cases" note="Four examples of building practical systems for acquisition and measurable growth." /><div className="grid gap-12 md:grid-cols-2">{growthCases.map((item) => <article key={item.company} className="border-b border-slate-200 pb-10"><img src={projectImages[item.image]} alt={`${item.company} growth case`} loading="lazy" className="mb-6 aspect-video w-full rounded-xl object-cover outline-1 -outline-offset-1 outline-black/5" /><p className="text-xs font-bold uppercase tracking-widest text-brand-accent">{item.company}</p><h3 className="mt-2 text-2xl font-bold">{item.title}</h3><p className="mt-4 leading-relaxed text-brand-muted">{item.description}</p><ul className="mt-5 grid gap-2 text-sm font-semibold sm:grid-cols-2">{item.results.map((result) => <li key={result} className="border-l-2 border-brand-accent pl-3">{result}</li>)}</ul><Link to="/projects" className="mt-6 inline-flex items-center gap-2 font-bold text-brand-accent hover:text-brand-primary">View Case Study <ArrowRight className="h-4 w-4" /></Link></article>)}</div><div className="mt-12 text-center"><Link to="/projects" className="inline-flex items-center gap-2 rounded-lg border border-slate-200 px-6 py-3 font-bold hover:bg-surface-light">View All Projects <ArrowRight className="h-4 w-4" /></Link></div></div></section>
 
