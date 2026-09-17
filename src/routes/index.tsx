@@ -25,6 +25,7 @@ export const Route = createFileRoute("/")({
 });
 
 const serviceIcons = [BriefcaseBusiness, Target, Megaphone, ChartNoAxesCombined, Bot, Network];
+const industryIcons = [Building2, HardHat, GraduationCap, Hotel, UtensilsCrossed, Cpu, Factory, ShoppingCart, Truck, BriefcaseBusiness];
 const campaignDashboards = [
   {
     company: "The Mattress Factory",
