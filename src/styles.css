@@ -38,12 +38,17 @@
 }
 
 @utility animate-logo-track {
-  animation: logo-track 36s linear infinite;
+  animation: logo-track 44s linear infinite;
+}
+
+@utility animate-logo-track-reverse {
+  animation: logo-track 48s linear infinite reverse;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-up,
-  .animate-logo-track {
+  .animate-logo-track,
+  .animate-logo-track-reverse {
     animation: none;
   }
 }

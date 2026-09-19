@@ -12,7 +12,7 @@
 - [x] Present verified business results as a growth dashboard
 - [ ] Verify the updated desktop and mobile experience
 
-- [ ] Add the uploaded certificates PDF with review and download actions
-- [ ] Highlight Google AI Essentials and verified AI/digital marketing skills
-- [ ] Add a browsable certificate gallery
-- [ ] Replace the single logo strip with a denser multi-row showcase
+- [x] Add the uploaded certificates PDF with review and download actions
+- [x] Highlight Google AI Essentials and verified AI/digital marketing skills
+- [x] Add a browsable certificate gallery
+- [x] Replace the single logo strip with a denser multi-row showcase

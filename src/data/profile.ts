@@ -534,12 +534,12 @@ export const valueAreas = [
 ];
 
 export const certifications = [
-  { year: "2025", title: "AI (Artificial Intelligence)", issuer: "Google · Coursera" },
+  { year: "2025", title: "Google AI Essentials — Five-Course Specialization", issuer: "Google · Coursera" },
   { year: "2024", title: "AI (Artificial Intelligence)", issuer: "Coursiv.io" },
-  { year: "2024", title: "Data Analytics & Business Intelligence", issuer: "Virtual University, Pakistan" },
-  { year: "2023", title: "SEO & WordPress Development", issuer: "Virtual University, Pakistan" },
-  { year: "2022", title: "Digital Marketing Course", issuer: "Virtual University, Pakistan" },
-  { year: "2021", title: "Fundamentals of Digital Marketing", issuer: "Google Digital Workshop" },
+  { year: "2024", title: "Data Analytics & Business Intelligence", issuer: "DigiSkills · Virtual University, Pakistan" },
+  { year: "2023", title: "SEO & WordPress", issuer: "DigiSkills · Virtual University, Pakistan" },
+  { year: "2023", title: "Digital Marketing", issuer: "DigiSkills · Virtual University, Pakistan" },
+  { year: "2022", title: "Fundamentals of Digital Marketing", issuer: "Google Digital Workshop" },
   { year: "2019", title: "Social Media Certificate", issuer: "HubSpot Academy, US" },
   { year: "2013", title: "Computer & Urdu Diploma", issuer: "Al Siddiq Institute, Karachi" },
   { year: "2012", title: "M.A. Arabic Language & Islamic Law", issuer: "Darul Uloom, Karachi" },
