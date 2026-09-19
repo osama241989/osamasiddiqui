@@ -16,3 +16,7 @@
 - [x] Highlight Google AI Essentials and verified AI/digital marketing skills
 - [x] Add a browsable certificate gallery
 - [x] Replace the single logo strip with a denser multi-row showcase
+- [x] Add every supplied certificate to a two-row sliding gallery
+- [x] Add the Google AI badge and strengthen the featured Google credential
+- [x] Remove the top Riyadh label and tighten the opening section spacing
+- [ ] Verify the expanded certificate gallery and revised opening section
