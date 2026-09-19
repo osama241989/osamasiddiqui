@@ -10,7 +10,7 @@
 - [x] Add the two new portfolio PDFs with review and download actions near the top
 - [x] Add a sliding client-logo showcase from the uploaded collection
 - [x] Present verified business results as a growth dashboard
-- [ ] Verify the updated desktop and mobile experience
+- [x] Verify the updated desktop and mobile experience
 
 - [x] Add the uploaded certificates PDF with review and download actions
 - [x] Highlight Google AI Essentials and verified AI/digital marketing skills
