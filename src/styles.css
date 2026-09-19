@@ -45,10 +45,20 @@
   animation: logo-track 48s linear infinite reverse;
 }
 
+@utility animate-certificate-track {
+  animation: logo-track 70s linear infinite;
+}
+
+@utility animate-certificate-track-reverse {
+  animation: logo-track 76s linear infinite reverse;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-up,
   .animate-logo-track,
-  .animate-logo-track-reverse {
+  .animate-logo-track-reverse,
+  .animate-certificate-track,
+  .animate-certificate-track-reverse {
     animation: none;
   }
 }
