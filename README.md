@@ -9,7 +9,7 @@ Recruiters and hiring managers
 Potential employers
 
 Clients and consulting opportunities
-
+   
 Business and industry contacts
 
 People who want to understand my professional capabilities
