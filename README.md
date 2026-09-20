@@ -79,7 +79,7 @@ Create a strong professional positioning statement based on the actual informati
 Make my value proposition immediately understandable within the first section of the website.
 
 3. Recommended Website Structure
-
+    
 Create a clear professional profile experience with sections such as:
 
 Hero / Introduction
