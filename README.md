@@ -7,7 +7,7 @@ Your task is to carefully review ALL attached files first and use them as the pr
 Recruiters and hiring managers
 
 Potential employers
-
+  
 Clients and consulting opportunities
    
 Business and industry contacts
