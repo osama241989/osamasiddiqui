@@ -24,8 +24,8 @@ export function ContactForm() {
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const fd = Object.fromEntries(new FormData(e.currentTarget)) as Record<string, string>;
-    const parsed = schema.safeParse({ ...fd, request_type: type, phone: fd.phone || undefined, company: fd.company || undefined, service: fd.service || undefined });
-    if (!parsed.success) { setError(parsed.error.issues[0].message); setStatus("error"); return; }
+    const parsed = schema.safeParse({ ...fd, request_type: type, phone: fd['phone'] || undefined, company: fd['company'] || undefined, service: fd['service'] || undefined });
+    if (!parsed.success) { setError(parsed.error.issues[0]?.message ?? 'Please check the form'); setStatus("error"); return; }
     setStatus("sending");
     const d = parsed.data;
     const { error: dbError } = await supabase.from("contact_submissions").insert({ name: d.name, email: d.email, message: d.message, request_type: d.request_type, phone: d.phone ?? null, company: d.company ?? null, service: d.service ?? null });
