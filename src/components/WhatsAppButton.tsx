@@ -5,5 +5,5 @@ export function WhatsAppIcon({ className = "h-6 w-6" }: { className?: string }) 
 }
 
 export function WhatsAppFloat() {
-  return <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp" className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[oklch(0.72_0.19_150)] text-primary-foreground shadow-lg transition-transform hover:scale-110"><WhatsAppIcon className="h-7 w-7" /></a>;
+  return <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp" className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-whatsapp text-primary-foreground shadow-lg transition-transform hover:scale-110"><WhatsAppIcon className="h-7 w-7" /></a>;
 }
