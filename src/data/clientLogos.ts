@@ -10,6 +10,6 @@ export const clientLogos = [
   { name: "Abraj ul Mullak", src: "/abraj.jpg" },
   { name: "Aqarlee", src: "/aqarlee.png" },
   { name: "Lavender SPA & Wellness", src: "/lavender.jpg" },
-  { name: "Maarif Education", src: "/maarif.jpg" },
+  { name: "Maarif Education", src: "/maarif.jfif" },
   { name: "Park Inn by Radisson", src: "/parkinn.png" },
 ];
