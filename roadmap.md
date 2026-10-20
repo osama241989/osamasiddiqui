@@ -20,3 +20,8 @@
 - [x] Add the Google AI badge and strengthen the featured Google credential
 - [x] Remove the top Riyadh label and tighten the opening section spacing
 - [ ] Verify the expanded certificate gallery and revised opening section
+- [x] Add scroll-reveal animation across sections
+- [x] Add digital services section with icons (marketing, websites, apps, ads, SEO, social, branding, e-commerce)
+- [x] Replace static tools list with animated two-row tools showcase
+- [x] Verify animations, services section and tools showcase on desktop and mobile
+- [x] Fix broken certificate images, Google badge and Maarif logo paths
