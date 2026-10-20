@@ -31,7 +31,7 @@ export const Route = createFileRoute("/")({
 const serviceIcons = [BriefcaseBusiness, Target, Megaphone, ChartNoAxesCombined, Bot, Network];
 const industryIcons = [Building2, HardHat, GraduationCap, Hotel, UtensilsCrossed, Cpu, Factory, ShoppingCart, Truck, BriefcaseBusiness];
 const digitalServiceIconMap = { megaphone: Megaphone, monitor: Monitor, smartphone: Smartphone, target: Target, search: Search, share: Share2, palette: Palette, cart: ShoppingCart } as const;
-const toolIconMap = { bot: Bot, sparkles: Sparkles, gemini: Gemini, workflow: Workflow, heart: Heart, target: Target, facebook: Facebook, chart: BarChart3, search: Search, bag: ShoppingBag, globe: Globe, palette: Palette, mail: Mail, zap: Zap } as const;
+const toolIconMap = { bot: Bot, sparkles: Sparkles, gemini: Stars, workflow: Workflow, heart: Heart, target: Target, facebook: Facebook, chart: BarChart3, search: Search, bag: ShoppingBag, globe: Globe, palette: Palette, mail: Mail, zap: Zap } as const;
 const campaignDashboards = [
   {
     company: "The Mattress Factory",
