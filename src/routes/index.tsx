@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect } from "react";
-import { ArrowDown, ArrowRight, Award, BarChart3, Bot, BriefcaseBusiness, Building2, ChartNoAxesCombined, Check, Cpu, Download, ExternalLink, Eye, Facebook, Factory, Gemini, Globe, GraduationCap, HardHat, Heart, Hotel, Linkedin, Mail, MapPin, Megaphone, Monitor, Network, Palette, Phone, Search, Share2, ShoppingBag, ShoppingCart, Smartphone, Sparkles, Target, TrendingUp, Truck, UtensilsCrossed, Workflow, Zap } from "lucide-react";
+import { ArrowDown, ArrowRight, Award, BarChart3, Bot, BriefcaseBusiness, Building2, ChartNoAxesCombined, Check, Cpu, Download, ExternalLink, Eye, Facebook, Factory, Globe, GraduationCap, HardHat, Heart, Hotel, Linkedin, Mail, MapPin, Megaphone, Monitor, Network, Palette, Phone, Search, Share2, ShoppingBag, ShoppingCart, Smartphone, Sparkles, Stars, Target, TrendingUp, Truck, UtensilsCrossed, Workflow, Zap } from "lucide-react";
 import portrait from "@/assets/portrait-formal.png.asset.json";
 import cvAsset from "@/assets/business-growth-cv.pdf.asset.json";
 import portfolioAsset from "@/assets/cwb-portfolio-2026.pdf.asset.json";
