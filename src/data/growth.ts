@@ -71,3 +71,31 @@ export const industryNames = ["Real Estate & Property", "Engineering & Construct
 export const aiCapabilities = ["AI-assisted business analysis", "Marketing automation", "Lead management workflows", "Customer communication", "Reporting automation", "CRM workflows", "AI content and campaign support", "No-code / low-code digital solutions", "Business process optimization"];
 export const aiTools = ["ChatGPT", "Claude", "Gemini", "n8n", "Lovable"];
 export const approach = ["Understand the business", "Identify growth gaps", "Analyze the market and customer", "Build the growth strategy", "Use marketing, data and technology", "Measure results", "Optimize and scale"];
+
+export const digitalServices = [
+  { title: "Digital Marketing", body: "Full-funnel digital marketing across Google, Meta, Snapchat, TikTok, LinkedIn and YouTube.", icon: "megaphone" },
+  { title: "Website Development", body: "Corporate, e-commerce, real estate, CRM, restaurant, spa and school websites — 30+ delivered.", icon: "monitor" },
+  { title: "Mobile & Web Applications", body: "Practical business applications, portals and platforms such as the Aqarlee PropTech web and mobile app.", icon: "smartphone" },
+  { title: "Paid Ad Campaigns", body: "Google Ads, Meta Ads and multi-platform campaigns with full conversion tracking and ROI focus.", icon: "target" },
+  { title: "SEO & Google Business", body: "Search visibility, local discovery and Google Business optimization that drive calls and visits.", icon: "search" },
+  { title: "Social Media Management", body: "Content, community growth and engagement across Facebook, Instagram, LinkedIn and YouTube.", icon: "share" },
+  { title: "Branding & Design", body: "Logo and full bilingual brand identity, company profiles, brochures and presentation decks.", icon: "palette" },
+  { title: "E-commerce & Shopify", body: "Online stores built from zero with tracking, product setup and customer acquisition campaigns.", icon: "cart" },
+];
+
+export const toolShowcase = [
+  { name: "ChatGPT", icon: "bot" },
+  { name: "Claude", icon: "sparkles" },
+  { name: "Gemini", icon: "gemini" },
+  { name: "n8n", icon: "workflow" },
+  { name: "Lovable", icon: "heart" },
+  { name: "Google Ads", icon: "target" },
+  { name: "Meta Ads", icon: "facebook" },
+  { name: "Google Analytics", icon: "chart" },
+  { name: "Search Console", icon: "search" },
+  { name: "Shopify", icon: "bag" },
+  { name: "WordPress", icon: "globe" },
+  { name: "Canva", icon: "palette" },
+  { name: "Mailchimp", icon: "mail" },
+  { name: "Zapier", icon: "zap" },
+];

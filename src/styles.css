@@ -54,12 +54,22 @@
   animation: logo-track 76s linear infinite reverse;
 }
 
+@utility animate-tools-track {
+  animation: logo-track 36s linear infinite;
+}
+
+@utility animate-tools-track-reverse {
+  animation: logo-track 42s linear infinite reverse;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-up,
   .animate-logo-track,
   .animate-logo-track-reverse,
   .animate-certificate-track,
-  .animate-certificate-track-reverse {
+  .animate-certificate-track-reverse,
+  .animate-tools-track,
+  .animate-tools-track-reverse {
     animation: none;
   }
 }
@@ -200,5 +210,27 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+  }
+
+  section.anim-hidden {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  section.anim-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition:
+      opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    section.anim-hidden,
+    section.anim-visible {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
   }
 }
