@@ -23,4 +23,5 @@
 - [x] Add scroll-reveal animation across sections
 - [x] Add digital services section with icons (marketing, websites, apps, ads, SEO, social, branding, e-commerce)
 - [x] Replace static tools list with animated two-row tools showcase
-- [ ] Verify animations, services section and tools showcase on desktop and mobile
+- [x] Verify animations, services section and tools showcase on desktop and mobile
+- [x] Fix broken certificate images, Google badge and Maarif logo paths
