@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect } from "react";
+import { initMotion } from "@/lib/motion";
 import { ArrowDown, ArrowRight, Award, BarChart3, Bot, BriefcaseBusiness, Building2, ChartNoAxesCombined, Check, Cpu, Download, ExternalLink, Eye, Facebook, Factory, Globe, GraduationCap, HardHat, Heart, Hotel, Linkedin, Mail, MapPin, Megaphone, Monitor, Network, Palette, Phone, Search, Share2, ShoppingBag, ShoppingCart, Smartphone, Sparkles, Stars, Target, TrendingUp, Truck, UtensilsCrossed, Workflow, Zap } from "lucide-react";
 import portrait from "@/assets/portrait-formal.png.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -84,24 +85,7 @@ function SectionHeading({ title, note, inverse = false }: { title: string; note?
 function Index() {
   const whatsapp = WHATSAPP_URL;
 
-  useEffect(() => {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const sections = Array.from(document.querySelectorAll<HTMLElement>("section")).filter((section) => section.id !== "top");
-    sections.forEach((section) => section.classList.add("anim-hidden"));
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("anim-visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.08 },
-    );
-    sections.forEach((section) => observer.observe(section));
-    return () => observer.disconnect();
-  }, []);
+  useEffect(() => initMotion(), []);
 
   return (
     <div className="min-h-screen bg-white font-sans text-brand-primary">
@@ -109,7 +93,7 @@ function Index() {
 
       <section id="top" className="px-6 py-10 md:py-14">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-10 md:flex-row">
-          <div className="flex-1 space-y-6 animate-fade-up">
+          <div className="hero-copy flex-1 space-y-6">
             <div><h1 className="text-5xl font-bold leading-[1.08] tracking-tight md:text-7xl">Business Growth <span className="text-brand-accent">Consultant</span></h1><p className="mt-5 text-base font-semibold text-brand-muted md:text-lg">Business Strategy • Growth • Marketing • Data • AI & Automation</p></div>
             <p className="max-w-2xl text-lg leading-relaxed text-brand-muted">I help businesses identify growth gaps, improve customer acquisition, strengthen their digital presence and build practical systems for growth using strategy, data, digital marketing and AI.</p>
             <p className="max-w-2xl border-l-2 border-brand-accent pl-5 font-semibold leading-relaxed">I don’t just run ads — I help solve business problems through strategy, data, technology and AI.</p>
