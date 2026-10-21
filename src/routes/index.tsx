@@ -2,10 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { ArrowDown, ArrowRight, Award, BarChart3, Bot, BriefcaseBusiness, Building2, ChartNoAxesCombined, Check, Cpu, Download, ExternalLink, Eye, Facebook, Factory, Globe, GraduationCap, HardHat, Heart, Hotel, Linkedin, Mail, MapPin, Megaphone, Monitor, Network, Palette, Phone, Search, Share2, ShoppingBag, ShoppingCart, Smartphone, Sparkles, Stars, Target, TrendingUp, Truck, UtensilsCrossed, Workflow, Zap } from "lucide-react";
 import portrait from "@/assets/portrait-formal.png.asset.json";
-import cvAsset from "@/assets/business-growth-cv.pdf.asset.json";
-import portfolioAsset from "@/assets/cwb-portfolio-2026.pdf.asset.json";
-import caseStudiesReport from "@/assets/cwb-case-studies-report.pdf.asset.json";
-import clientPortfolio from "@/assets/business-growth-client-portfolio.pdf.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
 import { ContactForm } from "@/components/ContactForm";
 import { WhatsAppFloat, WhatsAppIcon, WHATSAPP_URL } from "@/components/WhatsAppButton";
@@ -15,6 +11,10 @@ import { projectImages } from "@/data/projectImages";
 import { clientLogos } from "@/data/clientLogos";
 import { certificateGallery, certificatesDocument, featuredAiCredential, verifiedSkillGroups } from "@/data/certificates";
 import { aiCapabilities, approach, businessResults, digitalServices, growthCases, growthMetrics, growthServices, industryNames, realEstateExperience, toolShowcase } from "@/data/growth";
+
+// PDFs: public/ folder me ye 2 files honi chahiye
+const RESUME_PDF = "/resume%20(4).pdf";
+const PORTFOLIO_PDF = "/portfolio.pdf";
 
 const TITLE = "Business Growth Consultant | Osama Siddiqui";
 const DESCRIPTION = "Business Growth Consultant in Riyadh using strategy, data, digital marketing and practical AI to identify gaps and drive measurable growth.";
@@ -68,6 +68,15 @@ const campaignDashboards = [
   },
 ];
 
+const documents = [
+  {
+    title: "Business Growth Client Portfolio",
+    detail: "81 clients, 17 industries and delivered services",
+    url: PORTFOLIO_PDF,
+    filename: "Osama-Siddiqui-Business-Growth-Client-Portfolio.pdf",
+  },
+];
+
 function SectionHeading({ title, note, inverse = false }: { title: string; note?: string; inverse?: boolean }) {
   return <div className="mb-12 flex flex-col gap-4 md:mb-16 md:flex-row md:items-end md:justify-between"><div><h2 className={`mb-4 text-3xl font-bold tracking-tight md:text-4xl ${inverse ? "text-primary-foreground" : ""}`}>{title}</h2><div className="h-1 w-20 bg-brand-accent" /></div>{note ? <p className={`max-w-lg leading-relaxed md:text-right ${inverse ? "text-slate-300" : "text-brand-muted"}`}>{note}</p> : null}</div>;
 }
@@ -110,15 +119,15 @@ function Index() {
               <a href={whatsapp} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg border border-slate-200 px-6 py-3.5 font-semibold transition-colors hover:bg-surface-light"><WhatsAppIcon className="h-5 w-5 text-whatsapp" /> WhatsApp</a>
             </div>
             <div className="flex flex-wrap gap-3 border-t border-slate-100 pt-5">
-              <a href={cvAsset.url} download="Osama-Siddiqui-Business-Growth-Consultant-CV.pdf" className="inline-flex items-center gap-2 text-sm font-bold text-brand-accent hover:text-brand-primary"><Download className="h-4 w-4" /> Download Resume</a>
+              <a href={RESUME_PDF} download="Osama-Siddiqui-Business-Growth-Consultant-CV.pdf" className="inline-flex items-center gap-2 text-sm font-bold text-brand-accent hover:text-brand-primary"><Download className="h-4 w-4" /> Download Resume</a>
               <span className="text-slate-300">|</span>
-              <a href={portfolioAsset.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm font-bold text-brand-accent hover:text-brand-primary"><ExternalLink className="h-4 w-4" /> View CWB Portfolio</a>
+              <a href={PORTFOLIO_PDF} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm font-bold text-brand-accent hover:text-brand-primary"><ExternalLink className="h-4 w-4" /> View CWB Portfolio</a>
             </div>
           </div>
           <div className="w-full shrink-0 md:w-[34%]"><img src={portrait.url} alt="Osama Siddiqui, Business Growth Consultant" width={768} height={1024} className="aspect-3/4 w-full rounded-2xl object-cover object-top outline-1 -outline-offset-1 outline-black/5" /></div>
         </div>
-        <div className="mx-auto mt-8 grid max-w-7xl gap-4 border-t border-slate-100 pt-6 md:grid-cols-2">
-          {[{ title: "Business Growth Client Portfolio", detail: "81 clients, 17 industries and delivered services", asset: clientPortfolio, filename: "Osama-Siddiqui-Business-Growth-Client-Portfolio.pdf" }, { title: "CWB Case Studies Report", detail: "Detailed campaigns, results and business outcomes", asset: caseStudiesReport, filename: "Osama-Siddiqui-CWB-Case-Studies-Report.pdf" }].map((document) => <article key={document.title} className="flex flex-col justify-between gap-5 rounded-lg border border-slate-200 bg-surface-light p-5 sm:flex-row sm:items-center"><div><p className="font-bold">{document.title}</p><p className="mt-1 text-sm text-brand-muted">{document.detail}</p></div><div className="flex shrink-0 gap-2"><Button asChild variant="outline" size="sm"><a href={document.asset.url} target="_blank" rel="noreferrer"><Eye /> Review</a></Button><Button asChild size="sm"><a href={document.asset.url} download={document.filename}><Download /> Download</a></Button></div></article>)}
+        <div className="mx-auto mt-8 grid max-w-7xl gap-4 border-t border-slate-100 pt-6 md:grid-cols-1">
+          {documents.map((document) => <article key={document.title} className="flex flex-col justify-between gap-5 rounded-lg border border-slate-200 bg-surface-light p-5 sm:flex-row sm:items-center"><div><p className="font-bold">{document.title}</p><p className="mt-1 text-sm text-brand-muted">{document.detail}</p></div><div className="flex shrink-0 gap-2"><Button asChild variant="outline" size="sm"><a href={document.url} target="_blank" rel="noreferrer"><Eye /> Review</a></Button><Button asChild size="sm"><a href={document.url} download={document.filename}><Download /> Download</a></Button></div></article>)}
         </div>
       </section>
 
