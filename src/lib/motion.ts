@@ -43,7 +43,7 @@ export function initMotion(): () => void {
       const hero = document.querySelector("#top");
       if (hero) {
         const tl = gsap.timeline({ defaults: { ease: "expo.out" } });
-        tl.from(hero.querySelectorAll("h1, h1 + p, .hero-copy > p, .hero-copy > div"), { y: 60, opacity: 0, duration: 1.3, stagger: 0.1 });
+        tl.from(hero.querySelectorAll(".hero-copy > *"), { y: 60, opacity: 0, duration: 1.3, stagger: 0.1 });
         const img = hero.querySelector("img");
         if (img) {
           tl.from(img, { clipPath: "inset(100% 0% 0% 0%)", scale: 1.25, duration: 1.6, ease: "expo.inOut" }, 0.1);
