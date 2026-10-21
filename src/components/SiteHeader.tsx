@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { LanguageToggle } from "./LanguageToggle";
 
 export function SiteHeader() {
   return (
@@ -8,6 +9,7 @@ export function SiteHeader() {
         <div className="flex items-center gap-4 text-sm font-medium text-brand-muted md:gap-8">
           <a href="/#growth-cases" className="hidden transition-colors hover:text-brand-accent sm:block">Cases</a>
           <Link to="/projects" className="transition-colors hover:text-brand-accent">All Projects</Link>
+          <LanguageToggle />
           <a href="/#contact" className="whitespace-nowrap rounded-lg bg-brand-primary px-4 py-2 text-primary-foreground transition-colors hover:bg-brand-accent">Book a Call</a>
         </div>
       </div>
