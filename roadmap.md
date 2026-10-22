@@ -27,3 +27,7 @@
 - [x] Fix broken certificate images, Google badge and Maarif logo paths
 - [x] Add erlf.com-style motion (smooth scroll, staggered reveals, image unveils, parallax, progress bar)
 - [x] Add English / Arabic language switch with right-to-left layout
+- [ ] Restore three distinct portfolio review/download panels and factual summaries
+- [ ] Highlight digital services, move visual tools near the top, and add AI systems visuals
+- [ ] Correct DOME and Lavender imagery and show authentic campaign dashboard evidence
+- [ ] Verify updated English/Arabic pages, document links, and layout
