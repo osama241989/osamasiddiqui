@@ -266,3 +266,8 @@ html[dir="rtl"] :has(> [class*="-track"]),
 html[dir="rtl"] [class*="animate-"][class*="-track"] {
   direction: ltr;
 }
+
+html,
+body {
+  overflow-x: clip;
+}
