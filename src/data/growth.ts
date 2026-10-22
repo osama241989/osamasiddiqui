@@ -47,14 +47,14 @@ export const growthCases = [
     title: "Digital Growth & Student Acquisition",
     description: "Managed digital marketing, social media, Google Ads, website improvements, video campaigns and enrollment-focused campaigns.",
     results: ["2.73M Google Ads impressions", "9,300 clicks", "+7,217 Facebook followers", "+158% LinkedIn growth", "+181% YouTube subscriber growth", "2,400+ hours YouTube watch time"],
-    image: "video",
+    image: "dome",
   },
   {
     company: "Lavender SPA & Saloon",
     title: "Launching a New Business and Generating Leads from Zero",
     description: "Built the digital foundation including brand, bilingual website, social channels, Google presence and paid acquisition campaigns.",
     results: ["451 messaging leads in the first month", "SAR 2.65 cost per lead", "2,162 landing-page views", "17,490 Instagram views"],
-    image: "fnb",
+    image: "lavender",
   },
 ];
 
