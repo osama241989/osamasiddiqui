@@ -34,9 +34,10 @@ function translateNode(node: Node, lang: Lang) {
     if (ph !== null) {
       if (lang === "ar") {
         const src = originalPlaceholders.get(node) ?? ph;
-        if (ar[norm(src)]) {
+        const t = ar[norm(src)];
+        if (t) {
           originalPlaceholders.set(node, src);
-          node.setAttribute("placeholder", ar[norm(src)]);
+          node.setAttribute("placeholder", t);
         }
       } else if (originalPlaceholders.has(node)) {
         node.setAttribute("placeholder", originalPlaceholders.get(node)!);
