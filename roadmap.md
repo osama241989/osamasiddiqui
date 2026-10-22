@@ -25,3 +25,5 @@
 - [x] Replace static tools list with animated two-row tools showcase
 - [x] Verify animations, services section and tools showcase on desktop and mobile
 - [x] Fix broken certificate images, Google badge and Maarif logo paths
+- [x] Add erlf.com-style motion (smooth scroll, staggered reveals, image unveils, parallax, progress bar)
+- [x] Add English / Arabic language switch with right-to-left layout
