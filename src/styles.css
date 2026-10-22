@@ -12,6 +12,8 @@
   --color-brand-muted: oklch(0.554 0.041 257.4);
   --color-surface-light: oklch(0.984 0.003 247.9);
   --color-whatsapp: oklch(0.72 0.19 150);
+  --color-system-acquisition: oklch(0.96 0.025 230);
+  --color-system-automation: oklch(0.96 0.025 165);
 }
 
 @keyframes fade-up {
@@ -270,4 +272,14 @@ html[dir="rtl"] [class*="animate-"][class*="-track"] {
 html,
 body {
   overflow-x: clip;
+}
+
+.system-acquisition { background: var(--color-system-acquisition); }
+.system-automation { background: var(--color-system-automation); }
+.system-node { animation: system-pulse 4s ease-in-out infinite; }
+@keyframes system-pulse {
+  50% { transform: translateY(-5px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .system-node { animation: none; }
 }

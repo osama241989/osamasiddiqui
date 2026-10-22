@@ -1,0 +1,32 @@
+import { ArrowRight, BarChart3, Bot, Check, Database, Facebook, Globe, Heart, Mail, Megaphone, Monitor, Palette, Search, Share2, ShoppingBag, ShoppingCart, Smartphone, Sparkles, Stars, Target, Workflow, Zap } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { digitalServices, toolShowcase } from "@/data/growth";
+
+const serviceIcons = { megaphone: Megaphone, monitor: Monitor, smartphone: Smartphone, target: Target, search: Search, share: Share2, palette: Palette, cart: ShoppingCart } as const;
+const toolIcons = { bot: Bot, sparkles: Sparkles, gemini: Stars, workflow: Workflow, heart: Heart, target: Target, facebook: Facebook, chart: BarChart3, search: Search, bag: ShoppingBag, globe: Globe, palette: Palette, mail: Mail, zap: Zap } as const;
+
+export function ToolsShowcase() {
+  return <section id="tools" className="overflow-hidden border-b border-border bg-surface-light py-12">
+    <div className="mx-auto mb-7 max-w-7xl px-6"><p className="mb-2 text-sm font-semibold text-brand-accent">AI · Marketing · Data · Digital platforms</p><h2 className="text-2xl font-bold text-brand-primary md:text-3xl">Tools & Platforms</h2></div>
+    <div className="group space-y-4" aria-label="Tools and platforms showcase">{[toolShowcase.filter((_, i) => i % 2 === 0), toolShowcase.filter((_, i) => i % 2 !== 0)].map((row, r) => <div key={r} className={`flex w-max items-center group-hover:[animation-play-state:paused] ${r === 0 ? "animate-tools-track" : "animate-tools-track-reverse"}`}>{[...row, ...row, ...row, ...row].map((tool, i) => { const Icon = toolIcons[tool.icon as keyof typeof toolIcons] ?? Bot; return <div key={`${tool.name}-${i}`} aria-hidden={i >= row.length} className="mx-2 flex h-24 w-44 shrink-0 items-center gap-3 rounded-lg border border-border bg-background px-4"><div className="flex size-10 shrink-0 items-center justify-center rounded-md bg-brand-accent/10 text-brand-accent"><Icon className="size-6" /></div><span className="text-sm font-bold text-brand-primary">{tool.name}</span></div>; })}</div>)}</div>
+  </section>;
+}
+
+export function DigitalServices() {
+  return <section id="services" className="bg-brand-primary px-6 py-20 text-primary-foreground">
+    <div className="mx-auto max-w-7xl">
+      <div className="mb-10 flex flex-col justify-between gap-6 lg:flex-row lg:items-end"><div className="max-w-2xl"><p className="mb-4 text-sm font-bold text-brand-accent">STRATEGY → BUILD → ACQUIRE → OPTIMIZE</p><h2 className="text-3xl font-bold md:text-4xl">Digital Services That Drive Growth</h2><p className="mt-5 leading-relaxed text-primary-foreground/75">Websites, applications, advertising and digital systems — connected to your business goals.</p></div><Button asChild className="h-11 self-start bg-brand-accent text-primary-foreground hover:bg-brand-accent/90"><a href="#contact">Discuss Your Project <ArrowRight /></a></Button></div>
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{digitalServices.map((service, i) => { const Icon = serviceIcons[service.icon as keyof typeof serviceIcons] ?? Megaphone; return <article key={service.title} className="group rounded-lg border border-primary-foreground/15 bg-primary-foreground/5 p-6 transition-transform duration-300 hover:-translate-y-1 motion-reduce:transform-none"><div className="mb-7 flex items-center justify-between"><Icon className="size-9 text-brand-accent" /><span className="text-sm text-primary-foreground/45">{String(i + 1).padStart(2, "0")}</span></div><h3 className="text-lg font-bold">{service.title}</h3><p className="mt-3 text-sm leading-relaxed text-primary-foreground/75">{service.body}</p></article>; })}</div>
+      <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 border-t border-primary-foreground/15 pt-6 text-sm font-semibold">{["30 Websites & Digital Platforms", "100+ Campaigns Managed", "18 Full Brand Builds"].map(t => <span key={t} className="flex items-center gap-2"><Check className="size-4 text-brand-accent" />{t}</span>)}</div>
+    </div>
+  </section>;
+}
+
+const systems = [
+  { title: "Customer Acquisition System", body: "Connect campaigns, websites and lead management around customer acquisition.", nodes: [["Campaigns", Megaphone], ["Website", Monitor], ["CRM workflows", Database]], accent: "system-acquisition" },
+  { title: "AI-Assisted Business Workflows", body: "Use practical AI for analysis, customer communication and reporting automation.", nodes: [["Business data", Database], ["Practical AI", Bot], ["Reporting automation", BarChart3]], accent: "system-automation" },
+] as const;
+
+export function AiSystems() {
+  return <section id="ai-systems" className="bg-background px-6 py-20"><div className="mx-auto max-w-7xl"><div className="mb-10 max-w-3xl"><p className="mb-3 text-sm font-bold text-brand-accent">AI & DIGITAL BUSINESS SYSTEMS</p><h2 className="text-3xl font-bold text-brand-primary md:text-4xl">Practical AI. Connected Digital Systems.</h2><p className="mt-5 leading-relaxed text-brand-muted">I combine marketing, data and practical AI to improve workflows, reduce manual work and support better business decisions.</p></div><div className="grid gap-6 lg:grid-cols-2">{systems.map(system => <article key={system.title} className="overflow-hidden rounded-lg border border-border"><div className={`system-visual ${system.accent} px-5 py-10 sm:px-8`}><div className="mb-8 flex items-center gap-2 text-xs font-semibold text-brand-muted"><Workflow className="size-4" /><span>Capability workflow</span></div><div className="flex items-center justify-between gap-2">{system.nodes.map(([name, Icon], i) => <div key={name} className="contents"><div className="flex min-w-0 flex-1 flex-col items-center gap-3 text-center"><div className="system-node flex size-16 items-center justify-center rounded-lg border border-border bg-background text-brand-accent sm:size-20"><Icon className="size-8" /></div><span className="min-h-10 text-xs font-semibold text-brand-primary sm:text-sm">{name}</span></div>{i < 2 ? <ArrowRight className="mb-12 size-5 shrink-0 text-brand-accent rtl:rotate-180" /> : null}</div>)}</div></div><div className="p-6"><h3 className="text-xl font-bold text-brand-primary">{system.title}</h3><p className="mt-3 leading-relaxed text-brand-muted">{system.body}</p></div></article>)}</div></div></section>;
+}
