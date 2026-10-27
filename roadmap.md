@@ -32,4 +32,4 @@
 - [x] Correct DOME and Lavender imagery and show authentic campaign dashboard evidence
 - [x] Verify updated English/Arabic pages, document links, and layout
 - [x] Add Lead Engine automation project, new CV, expertise and key achievements
-- [ ] Marketing research and visitor growth plan (research running)
+- [x] Marketing research and visitor growth plan
