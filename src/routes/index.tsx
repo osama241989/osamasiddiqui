@@ -5,7 +5,8 @@ import { AiSystems, DigitalServices, ToolsShowcase } from "@/components/GrowthPr
 import cwbPortfolio from "@/assets/cwb-portfolio-2026.pdf.asset.json";
 import growthPortfolio from "@/assets/business-growth-client-portfolio.pdf.asset.json";
 import caseReport from "@/assets/cwb-case-studies-report.pdf.asset.json";
-import resume from "@/assets/business-growth-cv.pdf.asset.json";
+import resume from "@/assets/osama-cv-2026.pdf.asset.json";
+import { ExpertiseHighlights, LeadEngineProject } from "@/components/ProfileHighlights";
 import mattressEvidence from "@/assets/evidence/mattress-04.jpg.asset.json";
 import acecoEvidence from "@/assets/evidence/aceco-06.jpg.asset.json";
 import lavenderEvidence from "@/assets/evidence/lavender-11.jpg.asset.json";
@@ -108,7 +109,9 @@ function Index() {
               <a href={whatsapp} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg border border-slate-200 px-6 py-3.5 font-semibold transition-colors hover:bg-surface-light"><WhatsAppIcon className="h-5 w-5 text-whatsapp" /> WhatsApp</a>
             </div>
             <div className="flex flex-wrap gap-3 border-t border-slate-100 pt-5">
-              <a href={RESUME_PDF} download="Osama-Siddiqui-Business-Growth-Consultant-CV.pdf" className="inline-flex items-center gap-2 text-sm font-bold text-brand-accent hover:text-brand-primary"><Download className="h-4 w-4" /> Download Resume</a>
+              <a href={RESUME_PDF} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm font-bold text-brand-accent hover:text-brand-primary"><Eye className="h-4 w-4" /> View CV</a>
+              <span className="text-slate-300">|</span>
+              <a href={RESUME_PDF} download="Osama-Siddiqui-CV-2026.pdf" className="inline-flex items-center gap-2 text-sm font-bold text-brand-accent hover:text-brand-primary"><Download className="h-4 w-4" /> Download CV</a>
               <span className="text-slate-300">|</span>
               <a href={PORTFOLIO_PDF} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm font-bold text-brand-accent hover:text-brand-primary"><ExternalLink className="h-4 w-4" /> View CWB Portfolio</a>
             </div>
@@ -126,6 +129,8 @@ function Index() {
 
       <ToolsShowcase />
 
+      <ExpertiseHighlights />
+
       <section id="expertise" className="px-6 py-24"><div className="mx-auto max-w-7xl"><SectionHeading title="How I Help Businesses Grow" note="Marketing is one of my tools. Business growth is the problem I solve." /><div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">{growthServices.map((service, index) => { const Icon = serviceIcons[index] ?? BriefcaseBusiness; return <article key={service.title} className="rounded-xl border border-slate-100 p-8 shadow-sm"><div className="mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-brand-accent/10 text-brand-accent"><Icon className="h-6 w-6" /></div><h3 className="text-xl font-bold">{service.title}</h3><p className="mt-3 leading-relaxed text-brand-muted">{service.body}</p></article>; })}</div></div></section>
 
       <DigitalServices />
@@ -136,6 +141,8 @@ function Index() {
       <section id="growth-cases" className="px-6 py-24"><div className="mx-auto max-w-7xl"><SectionHeading title="Selected Growth Cases" note="Four examples of building practical systems for acquisition and measurable growth." /><div className="grid gap-12 md:grid-cols-2">{growthCases.map((item) => <article key={item.company} className="border-b border-slate-200 pb-10"><img src={projectImages[item.image]} alt={`${item.company} growth case`} loading="lazy" className={`mb-6 aspect-video w-full rounded-lg border border-border bg-surface-light ${item.image === "dome" || item.image === "lavender" ? "object-contain" : "object-cover"}`} /><p className="text-xs font-bold uppercase tracking-widest text-brand-accent">{item.company}</p><h3 className="mt-2 text-2xl font-bold">{item.title}</h3><p className="mt-4 leading-relaxed text-brand-muted">{item.description}</p><ul className="mt-5 grid gap-2 text-sm font-semibold sm:grid-cols-2">{item.results.map((result) => <li key={result} className="border-l-2 border-brand-accent pl-3">{result}</li>)}</ul><Link to="/projects" className="mt-6 inline-flex items-center gap-2 font-bold text-brand-accent hover:text-brand-primary">View Case Study <ArrowRight className="h-4 w-4" /></Link></article>)}</div><div className="mt-12 text-center"><Link to="/projects" className="inline-flex items-center gap-2 rounded-lg border border-slate-200 px-6 py-3 font-bold hover:bg-surface-light">View All Projects <ArrowRight className="h-4 w-4" /></Link></div></div></section>
 
       <section className="bg-brand-primary px-6 py-24 text-primary-foreground"><div className="mx-auto max-w-7xl"><SectionHeading inverse title="Business Growth & Real Estate Experience" note="Growth strategy, digital acquisition, websites, CRM and property technology solutions." /><div className="grid gap-px overflow-hidden rounded-xl bg-white/10 md:grid-cols-2 lg:grid-cols-5">{realEstateExperience.map((item) => <div key={item.name} className="bg-brand-primary p-7"><Building2 className="mb-5 h-6 w-6 text-brand-accent" /><h3 className="font-bold">{item.name}</h3><p className="mt-3 text-sm leading-relaxed text-slate-300">{item.body}</p></div>)}</div><p className="mt-10 max-w-3xl border-l-2 border-brand-accent pl-5 text-lg text-slate-200">My role goes beyond marketing — I work across customer acquisition, digital systems, CRM, business development and growth strategy.</p></div></section>
+
+      <LeadEngineProject />
 
       <section id="industries" className="px-6 py-24"><div className="mx-auto max-w-7xl"><SectionHeading title="Industry Experience" note="81+ businesses supported across 17 industries." /><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">{industryNames.map((industry, index) => { const Icon = industryIcons[index] ?? BriefcaseBusiness; return <div key={industry} className="flex min-h-32 flex-col justify-between rounded-lg border border-slate-100 p-6 shadow-sm"><div className="flex items-start justify-between"><div className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-accent/10 text-brand-accent"><Icon className="h-5 w-5" /></div><span className="text-sm font-bold text-brand-accent">{String(index + 1).padStart(2, "0")}</span></div><h3 className="mt-5 font-bold">{industry}</h3></div>; })}</div></div></section>
 

@@ -31,3 +31,5 @@
 - [x] Highlight digital services, move visual tools near the top, and add AI systems visuals
 - [x] Correct DOME and Lavender imagery and show authentic campaign dashboard evidence
 - [x] Verify updated English/Arabic pages, document links, and layout
+- [x] Add Lead Engine automation project, new CV, expertise and key achievements
+- [x] Marketing research and visitor growth plan
