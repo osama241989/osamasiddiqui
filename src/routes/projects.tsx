@@ -48,7 +48,7 @@ function ProjectsPage() {
           ))}
         </div>
       </main>
-      <footer className="border-t border-slate-100 px-6 py-10 text-center text-sm text-brand-muted">© {new Date().getFullYear()} Osama Siddiqui · Business Growth Consultant</footer>
+      <footer className="border-t border-slate-100 px-6 py-10 text-center text-sm text-brand-muted"><p>© {new Date().getFullYear()} Osama Siddiqui · Business Growth Consultant</p><div className="mt-4 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 font-medium"><a className="inline-flex items-center gap-2 hover:text-brand-accent" href={telHref}><Phone className="h-4 w-4" />{profile.phone}</a><a className="inline-flex items-center gap-2 hover:text-brand-accent" href={`mailto:${profile.email}`}><Mail className="h-4 w-4" />{profile.email}</a><a className="inline-flex items-center gap-2 hover:text-brand-accent" href={WHATSAPP_URL} target="_blank" rel="noreferrer"><WhatsAppIcon className="h-4 w-4 text-whatsapp" /> WhatsApp</a></div></footer>
     </div>
   );
 }
