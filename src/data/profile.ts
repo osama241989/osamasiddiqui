@@ -443,6 +443,84 @@ export const moreProjects = [
     impact: "Video assets extending campaign reach beyond static creative.",
     tags: ["Video Production", "Creative Direction", "Social Media"],
   },
+  {
+    image: "aldaam",
+    industry: "HR & Manpower Services",
+    name: "Aldaam — Full Support Manpower Services Campaign",
+    role: "Campaign design & social media marketing",
+    challenge:
+      "A manpower and human-resources services company needed to present cleaning, hospitality, barista and staffing services clearly to business clients.",
+    approach:
+      "Designed a bilingual Arabic-led social media ad collection with service-specific visuals, consistent branding and direct contact calls to action.",
+    impact:
+      "A complete service-by-service campaign set covering the company's full manpower offering.",
+    tags: ["Social Media", "Arabic Creative", "Service Campaigns"],
+  },
+  {
+    image: "biryaniking",
+    industry: "Restaurants & F&B",
+    name: "The Biryani King — Restaurant Launch Campaigns",
+    role: "Creative direction & social media design",
+    challenge:
+      "A Riyadh restaurant needed launch announcements, new-menu promotions and delivery-app visibility across two branches.",
+    approach:
+      "Produced grand-opening, Chinese-launch and dish-led social posts with delivery app badges, branch addresses and ordering details.",
+    impact:
+      "A full launch-to-daily-promotion content system supporting both restaurant locations.",
+    tags: ["Restaurant Marketing", "Launch Campaign", "Social Media"],
+  },
+  {
+    image: "marhaba",
+    industry: "Restaurants & F&B",
+    name: "New Marhaba Biryani — Brand & Offer Campaigns",
+    role: "Brand creative & campaign design",
+    challenge:
+      "A biryani restaurant needed a premium brand look and offer-driven campaigns to stand out in Riyadh's food market.",
+    approach:
+      "Built a brand-led visual identity with product photography styling, combo-deal and Eid offer campaigns, and price-led menu posts.",
+    impact:
+      "A distinctive, premium campaign set covering brand, seasonal offers and combo deals.",
+    tags: ["Brand Identity", "Offer Campaigns", "Food Creative"],
+  },
+  {
+    image: "dessert",
+    industry: "Bakery & Dessert",
+    name: "Dessert & Bakery — Social Media Design",
+    role: "Social media design & creative",
+    challenge:
+      "Dessert and café brands needed appetising social content that drives orders.",
+    approach:
+      "Designed product-led post series for cakes, cookies, brownies and desserts with offer framing and order prompts.",
+    impact:
+      "A ready-to-publish dessert content set with consistent visual style.",
+    tags: ["Social Media Design", "Food Creative", "Promo Posts"],
+  },
+  {
+    image: "foodphoto",
+    industry: "Restaurants & F&B",
+    name: "Food Product Photography",
+    role: "Photography direction",
+    challenge:
+      "Restaurant and food clients needed high-quality dish photography for menus and campaigns.",
+    approach:
+      "Directed food product photography covering plated dishes, wraps, grills and breads for use across menus and social media.",
+    impact:
+      "A professional food image library supporting menu design and advertising.",
+    tags: ["Food Photography", "Art Direction", "Menus"],
+  },
+  {
+    image: "foodposts",
+    industry: "Restaurants & F&B",
+    name: "Black Shawarma & Mono Pizza — Food Post Design",
+    role: "Social media design & creative concepts",
+    challenge:
+      "Fast-food brands needed scroll-stopping social posts with strong creative concepts.",
+    approach:
+      "Created concept-driven food post designs — from shawarma spotlights to pizza delivery creative — with bold visual storytelling.",
+    impact:
+      "High-impact social creative sets for two fast-food brands.",
+    tags: ["Creative Concepts", "Social Media Design", "Fast Food"],
+  },
 ];
 
 export const allProjects = [...projects, ...moreProjects];

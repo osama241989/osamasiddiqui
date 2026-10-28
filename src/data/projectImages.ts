@@ -8,6 +8,12 @@ import menu from "@/assets/p-menu.jpg.asset.json";
 import dates from "@/assets/p-dates.jpg.asset.json";
 import interior from "@/assets/p-interior.jpg.asset.json";
 import modasafi from "@/assets/p-modasafi.jpg.asset.json";
+import aldaam from "@/assets/p-aldaam.jpg.asset.json";
+import biryaniking from "@/assets/p-biryaniking.jpg.asset.json";
+import marhaba from "@/assets/p-marhaba.jpg.asset.json";
+import dessert from "@/assets/p-dessert.jpg.asset.json";
+import foodphoto from "@/assets/p-foodphoto.jpg.asset.json";
+import foodposts from "@/assets/p-foodposts.jpg.asset.json";
 import dome from "@/assets/evidence/dome-school.jpg.asset.json";
 import lavender from "@/assets/client-logos/lavender.jpg.asset.json";
 
@@ -28,4 +34,10 @@ export const projectImages: Record<string, string> = {
   dates: dates.url,
   interior: interior.url,
   modasafi: modasafi.url,
+  aldaam: aldaam.url,
+  biryaniking: biryaniking.url,
+  marhaba: marhaba.url,
+  dessert: dessert.url,
+  foodphoto: foodphoto.url,
+  foodposts: foodposts.url,
 };
