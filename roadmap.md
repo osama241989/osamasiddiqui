@@ -33,3 +33,5 @@
 - [x] Verify updated English/Arabic pages, document links, and layout
 - [x] Add Lead Engine automation project, new CV, expertise and key achievements
 - [x] Marketing research and visitor growth plan
+- [x] Use one phone number and email across the site and make WhatsApp the main button at the top
+
