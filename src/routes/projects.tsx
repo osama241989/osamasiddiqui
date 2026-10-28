@@ -1,8 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ArrowLeft, ExternalLink, Mail, Phone } from "lucide-react";
 import cwbPortfolio from "@/assets/cwb-portfolio-2026.pdf.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
-import { allProjects } from "@/data/profile";
+import { allProjects, profile, telHref } from "@/data/profile";
+import { WHATSAPP_URL, WhatsAppIcon } from "@/components/WhatsAppButton";
+
 import { projectImages } from "@/data/projectImages";
 
 const TITLE = "All Projects | Osama Siddiqui";
