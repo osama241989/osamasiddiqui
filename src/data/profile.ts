@@ -2,8 +2,9 @@ export const profile = {
   name: "Osama Siddiqui",
   title: "Business Growth Consultant",
   location: "Riyadh, Saudi Arabia",
-  email: "osama.gr84u@gmail.com",
+  email: "connectworldbusiness1@gmail.com",
   phone: "+966 58 109 0307",
+  whatsappNumber: "966581090307",
   linkedin: "https://www.linkedin.com/in/muhammadosamasiddiqui/",
   agency: "https://www.connectworldbusiness.com",
   languages: [
@@ -12,6 +13,11 @@ export const profile = {
     { name: "Urdu", level: "Native" },
   ],
 };
+
+export const telHref = `tel:${profile.phone.replace(/\s/g, "")}`;
+export const whatsappHref = (message: string) =>
+  `https://wa.me/${profile.whatsappNumber}?text=${encodeURIComponent(message)}`;
+
 
 export const metrics = [
   { value: "81+", label: "Businesses Supported" },
