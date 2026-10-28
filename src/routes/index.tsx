@@ -104,10 +104,11 @@ function Index() {
             <p className="max-w-2xl text-lg leading-relaxed text-brand-muted">I help businesses identify growth gaps, improve customer acquisition, strengthen their digital presence and build practical systems for growth using strategy, data, digital marketing and AI.</p>
             <p className="max-w-2xl border-l-2 border-brand-accent pl-5 font-semibold leading-relaxed">I don’t just run ads — I help solve business problems through strategy, data, technology and AI.</p>
             <div className="flex flex-wrap gap-3">
+              <a href={whatsapp} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg bg-whatsapp px-6 py-3.5 font-bold text-brand-primary shadow-sm transition-all hover:-translate-y-0.5 hover:bg-whatsapp/90"><WhatsAppIcon className="h-5 w-5" /> WhatsApp Me</a>
               <a href="#growth-cases" className="rounded-lg bg-brand-primary px-6 py-3.5 font-semibold text-primary-foreground transition-all hover:-translate-y-0.5 hover:bg-brand-accent">View My Work</a>
-              <a href="#contact" className="rounded-lg bg-brand-accent px-6 py-3.5 font-semibold text-primary-foreground transition-all hover:-translate-y-0.5 hover:bg-brand-primary">Book a Free Consultation</a>
-              <a href={whatsapp} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg border border-slate-200 px-6 py-3.5 font-semibold transition-colors hover:bg-surface-light"><WhatsAppIcon className="h-5 w-5 text-whatsapp" /> WhatsApp</a>
+              <a href="#contact" className="rounded-lg border border-slate-200 px-6 py-3.5 font-semibold transition-colors hover:bg-surface-light">Book a Free Consultation</a>
             </div>
+
             <div className="flex flex-wrap gap-3 border-t border-slate-100 pt-5">
               <a href={RESUME_PDF} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm font-bold text-brand-accent hover:text-brand-primary"><Eye className="h-4 w-4" /> View CV</a>
               <span className="text-slate-300">|</span>
