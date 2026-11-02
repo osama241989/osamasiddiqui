@@ -11,3 +11,5 @@
 
 - Keep portfolio presentation blocks in focused browser-safe components, with document URLs sourced from asset pointers so each download preserves its original evidence.
 - Use original portfolio screenshots for campaign evidence and distinguish historical results from live reporting; capability diagrams illustrate workflows, not client deployments.
+- Keep automation/system case studies in a shared browser-safe data module, with reusable preview cards and unnested `/projects/$slug` detail pages, so future projects retain one presentation without changing the portfolio index layout.
+- Use explicit service categories and an intersection filter for project browsing; free-form tool tags are not a reliable service taxonomy.

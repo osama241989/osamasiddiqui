@@ -34,4 +34,9 @@
 - [x] Add Lead Engine automation project, new CV, expertise and key achievements
 - [x] Marketing research and visitor growth plan
 - [x] Use one phone number and email across the site and make WhatsApp the main button at the top
+- [ ] Complete combined industry/service project filters with counts and reset
+- [ ] Add Daybook, Job Desk and Dream Softness using supplied screenshots and documents
+- [ ] Replace oversized Lead Engine section with compact automation/system cards and full case studies
+- [ ] Include existing real-estate systems without inventing new deployments or results
+- [ ] Verify filters, detail pages, original downloads and desktop/mobile layouts
 
