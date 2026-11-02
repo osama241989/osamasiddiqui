@@ -6,7 +6,8 @@ import cwbPortfolio from "@/assets/cwb-portfolio-2026.pdf.asset.json";
 import growthPortfolio from "@/assets/business-growth-client-portfolio.pdf.asset.json";
 import caseReport from "@/assets/cwb-case-studies-report.pdf.asset.json";
 import resume from "@/assets/osama-cv-2026.pdf.asset.json";
-import { ExpertiseHighlights, LeadEngineProject } from "@/components/ProfileHighlights";
+import { ExpertiseHighlights } from "@/components/ProfileHighlights";
+import { SystemPortfolio } from "@/components/SystemPortfolio";
 import mattressEvidence from "@/assets/evidence/mattress-04.jpg.asset.json";
 import acecoEvidence from "@/assets/evidence/aceco-06.jpg.asset.json";
 import lavenderEvidence from "@/assets/evidence/lavender-11.jpg.asset.json";
@@ -143,7 +144,7 @@ function Index() {
 
       <section className="bg-brand-primary px-6 py-24 text-primary-foreground"><div className="mx-auto max-w-7xl"><SectionHeading inverse title="Business Growth & Real Estate Experience" note="Growth strategy, digital acquisition, websites, CRM and property technology solutions." /><div className="grid gap-px overflow-hidden rounded-xl bg-white/10 md:grid-cols-2 lg:grid-cols-5">{realEstateExperience.map((item) => <div key={item.name} className="bg-brand-primary p-7"><Building2 className="mb-5 h-6 w-6 text-brand-accent" /><h3 className="font-bold">{item.name}</h3><p className="mt-3 text-sm leading-relaxed text-slate-300">{item.body}</p></div>)}</div><p className="mt-10 max-w-3xl border-l-2 border-brand-accent pl-5 text-lg text-slate-200">My role goes beyond marketing — I work across customer acquisition, digital systems, CRM, business development and growth strategy.</p></div></section>
 
-      <LeadEngineProject />
+      <SystemPortfolio />
 
       <section id="industries" className="px-6 py-24"><div className="mx-auto max-w-7xl"><SectionHeading title="Industry Experience" note="81+ businesses supported across 17 industries." /><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">{industryNames.map((industry, index) => { const Icon = industryIcons[index] ?? BriefcaseBusiness; return <div key={industry} className="flex min-h-32 flex-col justify-between rounded-lg border border-slate-100 p-6 shadow-sm"><div className="flex items-start justify-between"><div className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-accent/10 text-brand-accent"><Icon className="h-5 w-5" /></div><span className="text-sm font-bold text-brand-accent">{String(index + 1).padStart(2, "0")}</span></div><h3 className="mt-5 font-bold">{industry}</h3></div>; })}</div></div></section>
 
