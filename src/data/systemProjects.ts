@@ -25,7 +25,7 @@ import dreamWorkflow from "@/assets/systems/dream-workflow.png.asset.json";
 import dreamPdf from "@/assets/systems/dream-case-study.pdf.asset.json";
 import leadWorkflow from "@/assets/lead-engine/workflow.png.asset.json";
 import leadPdf from "@/assets/lead-engine/overview.pdf.asset.json";
-import { projectImages } from "@/data/projectImages";
+import realestate from "@/assets/p-realestate.jpg.asset.json";
 
 export interface SystemProject {
   slug: string; name: string; industry: string; services: string[]; status: string;
@@ -103,7 +103,7 @@ export const systemProjects: SystemProject[] = [
   },
   {
     slug: "abraj-tenant-management", name: "Abraj ul Mullak — Tenant Management CRM", industry: "Real Estate & Property", services: ["CRM & Digital Systems"], status: "Property business systems",
-    summary: "Tenant-management CRM and digital business support for a real-estate operation.", headline: "Connecting tenant management with a stronger digital business.", role: "CRM, business setup, marketing & advertising", cover: projectImages.realestate,
+    summary: "Tenant-management CRM and digital business support for a real-estate operation.", headline: "Connecting tenant management with a stronger digital business.", role: "CRM, business setup, marketing & advertising", cover: realestate.url,
     evidence: "Related real-estate portfolio imagery, not a screenshot of the CRM. No system interface or measured outcomes were supplied.", tools: ["Tenant Management CRM", "Digital Business Systems"],
     challenge: "Support a property business across tenant management, business setup and digital acquisition.",
     workflow: [{title: "Tenant management", body: "CRM support for tenant-management work."}, {title: "Business setup", body: "Business and digital operations support."}, {title: "Marketing", body: "Marketing and advertising support for the property business."}],
@@ -111,7 +111,7 @@ export const systemProjects: SystemProject[] = [
   },
   {
     slug: "aqarlee-proptech", name: "Aqarlee — PropTech Platform", industry: "Real Estate & Property", services: ["CRM & Digital Systems", "Websites & E-commerce"], status: "Web · Mobile · Admin",
-    summary: "A property-technology platform spanning a website, mobile application and administration portal.", headline: "A connected digital platform for a property business.", role: "Real-estate digital business experience", cover: projectImages.realestate,
+    summary: "A property-technology platform spanning a website, mobile application and administration portal.", headline: "A connected digital platform for a property business.", role: "Real-estate digital business experience", cover: realestate.url,
     evidence: "Related real-estate portfolio imagery, not an Aqarlee interface screenshot. No measured platform outcomes were supplied.", tools: ["Web Platform", "Mobile App", "Admin Portal"],
     challenge: "Bring property-business activity into connected digital channels.", workflow: [{title: "Web", body: "Property-technology web platform."}, {title: "Mobile", body: "A mobile application for the platform."}, {title: "Administration", body: "An admin portal supporting the digital platform."}],
     features: ["Web platform", "Mobile application", "Admin portal"], benefits: ["A connected web, mobile and administration footprint"], safeguards: ["No specific platform features or performance outcomes beyond the supplied evidence are claimed."], screenshots: [], documents: [],
