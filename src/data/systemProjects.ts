@@ -1,5 +1,7 @@
 import daybookCover from "@/assets/systems/daybook-home.jpg.asset.json";
-import daybookArtwork from "@/assets/systems/daybook-cover.png.asset.json";
+import daybookPreview from "@/assets/systems/daybook-preview.jpg";
+import jobPreview from "@/assets/systems/job-desk-preview.jpg";
+import dreamPreview from "@/assets/systems/dream-preview.jpg";
 import daybookChat from "@/assets/systems/daybook-chat.jpg.asset.json";
 import daybookCard from "@/assets/systems/daybook-card.jpg.asset.json";
 import daybookContacts from "@/assets/systems/daybook-contacts.jpg.asset.json";
@@ -44,8 +46,8 @@ export const systemProjects: SystemProject[] = [
   {
     slug: "daybook-ai-crm", name: "Daybook AI CRM", industry: "Professional Services", services: ["AI & Automation", "CRM & Digital Systems"], status: "AI-first CRM",
     summary: "Turn a message, voice note or business card into contacts, tasks and timely follow-ups in three languages.",
-    headline: "One messy message. Four clean records.", role: "Product concept, AI design & delivery", cover: daybookCover.url,
-    evidence: "Supplied system screenshots. Dashboard figures illustrate the workspace, not client growth results.",
+    headline: "One messy message. Four clean records.", role: "Product concept, AI design & delivery", cover: daybookPreview,
+    evidence: "Illustrative cover based on supplied artwork. Original system screenshots appear below; workspace figures are not client growth results.",
     tools: ["Google Gemini", "Cloudflare Workers", "Durable Objects", "SQLite", "PWA"],
     challenge: "Business contacts, voice notes and follow-ups were scattered across cards and chat threads. Rigid forms made it harder to keep relationship information current while on the move.",
     workflow: [{title: "Capture", body: "Type a message, record a voice note or photograph business cards."}, {title: "Understand", body: "Gemini interprets Roman Urdu, English or Arabic using contact and calendar context."}, {title: "Review", body: "Check an editable preview and resolve any uncertain fields."}, {title: "Save & learn", body: "Save linked records, sync to the cloud and learn from corrections."}],
@@ -54,14 +56,14 @@ export const systemProjects: SystemProject[] = [
     safeguards: ["Editable review before saving AI suggestions", "Owner-only login and backup/restore", "Secrets removed before AI processing", "Undo for AI actions"],
     facts: [{value: "3", label: "Supported languages"}, {value: "Up to 25", label: "Records from one message"}],
     planned: "Live voice conversation with Gemini is being integrated; it is not presented as a completed feature.",
-    screenshots: [shot(daybookChat, "Capture in natural language", "One message can describe several linked records."), shot(daybookCard, "Scan business cards", "Review extracted contact details before saving."), shot(daybookContacts, "Relationship memory", "Contact categories, priorities and follow-up context."), shot(daybookTasks, "Tasks & follow-ups", "Organize work and dated reminders."), shot(daybookNotes, "Notes & ideas", "Keep business notes in the same workspace."), shot(daybookMoney, "Expense tracking", "Record expenses in SAR."), shot(daybookMobile, "Daybook on mobile", "Installable workspace with mobile capture.", true), shot(daybookArtwork, "Daybook presentation artwork", "Illustrative supplied artwork; figures are not measured business results.")],
+    screenshots: [shot(daybookChat, "Capture in natural language", "One message can describe several linked records."), shot(daybookCard, "Scan business cards", "Review extracted contact details before saving."), shot(daybookContacts, "Relationship memory", "Contact categories, priorities and follow-up context."), shot(daybookTasks, "Tasks & follow-ups", "Organize work and dated reminders."), shot(daybookNotes, "Notes & ideas", "Keep business notes in the same workspace."), shot(daybookMoney, "Expense tracking", "Record expenses in SAR."), shot(daybookMobile, "Daybook on mobile", "Installable workspace with mobile capture.", true), shot(daybookCover, "Original Daybook dashboard", "Supplied workspace screenshot; counters are not client growth results.")],
     documents: [doc(daybookPdf, "Daybook case study")],
   },
   {
     slug: "job-desk-ai", name: "Job Desk AI", industry: "HR & Manpower Services", services: ["AI & Automation", "CRM & Digital Systems"], status: "AI System · Live",
     summary: "A personal AI recruiter that finds jobs every morning and prepares a tailored CV, cover letter and Gmail draft.",
-    headline: "Wake up to jobs that already have your CV.", role: "Concept, AI workflow & build", cover: jobCover.url,
-    evidence: "Real screenshots from a copy of the working system, using fictional demo data. Capabilities are not hiring outcomes.",
+    headline: "Wake up to jobs that already have your CV.", role: "Concept, AI workflow & build", cover: jobPreview,
+    evidence: "Illustrative cover; original screenshots below use fictional demo data. Capabilities are not hiring outcomes. AI prepares; the candidate reviews and sends.",
     tools: ["Claude AI", "Scheduled Tasks", "Gmail", "Google Drive", "Indeed"],
     challenge: "Searching multiple job boards, tailoring CVs and following up on applications becomes a second full-time job. Generic applications lack role-specific focus and are difficult to track.",
     workflow: [{title: "Search", body: "Find fresh roles across alerts, job boards, company career pages and recruitment agencies."}, {title: "Match", body: "Score role, skills, seniority, location and freshness out of ten."}, {title: "Tailor", body: "Prepare a job-specific ATS CV, cover letter and application answers."}, {title: "Review", body: "Create a Drive folder and Gmail draft; the candidate checks and sends."}, {title: "Track", body: "Monitor sent emails, replies and follow-up dates."}],
@@ -70,14 +72,14 @@ export const systemProjects: SystemProject[] = [
     safeguards: ["Nothing is sent without human review", "Never invent candidate skills or degrees", "Only employer-published contact addresses; never guessed", "Automatic portal applying remains in development"],
     facts: [{value: "1", label: "Scheduled morning run"}, {value: "Up to 18", label: "Scored jobs per run"}, {value: "8", label: "New agencies per run"}, {value: "2 pages", label: "Tailored CV per job"}],
     planned: "Fully automatic applying, including portal account creation and one-click auto apply, is in development. Current applications are prepared by AI and sent after review.",
-    screenshots: [shot(jobCard, "Everything for one application", "Match score, keywords, CV files, cover letter and Drive folder."), shot(jobReview, "Review before sending", "Check recipient, message and attachments before anything goes out."), shot(jobEmails, "Email tracking", "Draft, sent, replied and follow-up due states."), shot(jobAgency, "Recruitment agencies", "Published agency addresses and outreach drafts."), shot(jobAdd, "Add a job from anywhere", "Paste a link and description for a tailored application."), shot(jobQr, "Desk-to-phone handoff", "QR handoff for app-only portals."), shot(jobMobile, "Mobile desk", "Fictional demo data.", true), shot(jobMobileJobs, "Mobile jobs", "Fictional demo data.", true), shot(jobMobileReview, "Mobile review", "Fictional demo data.", true), shot(jobMobileEmails, "Mobile email tracking", "Fictional demo data.", true)],
+    screenshots: [shot(jobCover, "Original Job Desk dashboard", "Real screenshot with fictional demo data."), shot(jobCard, "Everything for one application", "Match score, keywords, CV files, cover letter and Drive folder."), shot(jobReview, "Review before sending", "Check recipient, message and attachments before anything goes out."), shot(jobEmails, "Email tracking", "Draft, sent, replied and follow-up due states."), shot(jobAgency, "Recruitment agencies", "Published agency addresses and outreach drafts."), shot(jobAdd, "Add a job from anywhere", "Paste a link and description for a tailored application."), shot(jobQr, "Desk-to-phone handoff", "QR handoff for app-only portals."), shot(jobMobile, "Mobile desk", "Fictional demo data.", true), shot(jobMobileJobs, "Mobile jobs", "Fictional demo data.", true), shot(jobMobileReview, "Mobile review", "Fictional demo data.", true), shot(jobMobileEmails, "Mobile email tracking", "Fictional demo data.", true)],
     documents: [doc(jobPdf, "Job Desk case study"), doc(jobCarousel, "Job Desk presentation")],
   },
   {
     slug: "dream-softness-ai-sales-agent", name: "Dream Softness AI Sales Agent", industry: "Retail & E-commerce", services: ["AI & Automation", "CRM & Digital Systems"], status: "n8n workflow · Deployment-ready design",
     summary: "A WhatsApp sales workflow connecting verified product knowledge, customer memory, lead scoring and follow-up.",
-    headline: "From a WhatsApp inquiry to a structured sales follow-up.", role: "AI sales workflow & business automation", cover: dreamWorkflow.url,
-    evidence: "Original n8n workflow screenshot and client presentation. Described capabilities are not verified sales results or proof of a live deployment.",
+    headline: "From a WhatsApp inquiry to a structured sales follow-up.", role: "AI sales workflow & business automation", cover: dreamPreview,
+    evidence: "Illustrative cover; the original n8n workflow and client presentation appear below. Capabilities are not verified sales results or proof of a live deployment.",
     tools: ["n8n", "Google Gemini", "WhatsApp Business API", "Google Sheets"],
     challenge: "Late replies, lost mattress inquiries and manual reminders make customer acquisition harder when sales staff are busy or offline.",
     workflow: [{title: "Receive & filter", body: "Receive WhatsApp messages and filter delivery receipts."}, {title: "Normalize", body: "Clean the customer's phone number and message text."}, {title: "Load context", body: "Read customer history and approved product information from Google Sheets."}, {title: "Generate reply", body: "Gemini drafts a brief, context-aware answer using verified information."}, {title: "Send & update", body: "Send the reply, extract lead details and update the CRM."}, {title: "Follow up", body: "Check eligible leads daily and use approved templates for scheduled reminders."}],
