@@ -39,4 +39,5 @@
 - [ ] Replace oversized Lead Engine section with compact automation/system cards and full case studies
 - [ ] Include existing real-estate systems without inventing new deployments or results
 - [ ] Verify filters, detail pages, original downloads and desktop/mobile layouts
+- [ ] Upgrade automation previews using newly supplied artwork, clearly separating illustration from real system evidence
 
