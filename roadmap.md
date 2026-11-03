@@ -19,7 +19,7 @@
 - [x] Add every supplied certificate to a two-row sliding gallery
 - [x] Add the Google AI badge and strengthen the featured Google credential
 - [x] Remove the top Riyadh label and tighten the opening section spacing
-- [ ] Verify the expanded certificate gallery and revised opening section
+- [x] Verify the expanded certificate gallery and revised opening section
 - [x] Add scroll-reveal animation across sections
 - [x] Add digital services section with icons (marketing, websites, apps, ads, SEO, social, branding, e-commerce)
 - [x] Replace static tools list with animated two-row tools showcase
@@ -34,9 +34,10 @@
 - [x] Add Lead Engine automation project, new CV, expertise and key achievements
 - [x] Marketing research and visitor growth plan
 - [x] Use one phone number and email across the site and make WhatsApp the main button at the top
-- [ ] Complete combined industry/service project filters with counts and reset
-- [ ] Add Daybook, Job Desk and Dream Softness using supplied screenshots and documents
-- [ ] Replace oversized Lead Engine section with compact automation/system cards and full case studies
-- [ ] Include existing real-estate systems without inventing new deployments or results
-- [ ] Verify filters, detail pages, original downloads and desktop/mobile layouts
+- [x] Complete combined industry/service project filters with counts and reset
+- [x] Add Daybook, Job Desk and Dream Softness using supplied screenshots and documents
+- [x] Replace oversized Lead Engine section with compact automation/system cards and full case studies
+- [x] Include existing real-estate systems without inventing new deployments or results
+- [x] Verify filters, detail pages, original downloads and desktop/mobile layouts
+- [x] Upgrade automation previews using newly supplied artwork, clearly separating illustration from real system evidence
 
